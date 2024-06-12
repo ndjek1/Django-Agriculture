@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Soil Properties Analysis Result{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Soil Properties Analysis Result</h1>
+    <p>Here are the interpretation based on the provided soil properties:</p>
+    
+    <div class="alert alert-primary" role="alert">
+        <p class="lead">{{ generated_response | linebreaksbr }}</p>
+    </div>
+
+    <a href="{% url 'soil_properties_analysis' %}" class="btn btn-secondary">Return to Input Form</a>
+</div>
+{% endblock %}
+

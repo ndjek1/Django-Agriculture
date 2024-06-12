@@ -1,0 +1,14 @@
+/* custom.css */
+body {
+    background-color: #33393f !important; /* Light background color */
+}
+
+header.bg-secondary {
+    background-color: #6c757d !important; /* Customize header background color */
+}
+
+section.container {
+    background-color: #ffffff !important; /* Background color for sections */
+    padding: 20px !important;
+    border-radius: 10px !important;
+}

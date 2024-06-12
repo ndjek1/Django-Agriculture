@@ -1,0 +1,113 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Home{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    
+</head>
+<body>
+{% block content %}
+    <header class="bg-success text-white text-center py-5">
+        <h1>Precision Agriculture: Revolutionizing Farming</h1>
+        <p class="lead">Your Soil Analysis and Agriculture Companion</p>
+       
+    </header>
+
+    <!-- <section class="container mt-5">
+        <h2 class="text-center">How to Use Revosoil</h2>
+        <p class="text-center">Watch our demo video to learn how to use the features of the Revosoil app.</p>
+	<div class="d-flex justify-content-center">
+		<div style="position:relative;max-width: 640px;">
+			<a style="position:absolute;top:20px;right:1rem;opacity:0.8;" href="https://clipchamp.com/watch/qBWENdDpBTa?utm_source=embed&utm_medium=embed&utm_campaign=watch">
+				<img loading="lazy" style="height:22px;" src="https://clipchamp.com/e.svg" alt="Made with Clipchamp" />
+			</a>
+			<iframe allow="autoplay;" allowfullscreen style="border:none" src="https://clipchamp.com/watch/qBWENdDpBTa/embed" width="640" height="360"></iframe>
+		</div>
+	</div>
+    </section> -->
+
+    <section class="container mt-5 mb-5 bg-teal-700">
+        <div class="row flex-column flex-md-row justify-content-around">
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+                <h2>About Precision Agriculture</h2>
+                <p>Precision agriculture is a modern farming practice that uses technology to optimize field-level
+                     management regarding crop farming.</p>
+                <p>It helps in increasing efficiency, saving costs, and promoting environmental sustainability.</p>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
+                <img src="{% static 'images/agricult.jpg' %}" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </section>
+<section>
+
+</section>
+   
+    <section class="container mt-5 mb-5">
+        <div class="row flex-column flex-md-row justify-content-around">
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+                <h2>Technologies used</h2>
+                <p><strong>GPS/GNSS:</strong> Precision mapping and navigation.</p>
+            <p><strong>Drones:</strong> Aerial imagery for crop monitoring.</p>
+            <p><strong>IoT Sensors:</strong> Real-time data on soil and weather conditions.</p>
+            <p><strong>Data Analytics:</strong> Transforming data into actionable insights.</p>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
+                <img src="{% static 'images/agricult1.jpg' %}" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5 mb-5 p-6">
+        <div class="row flex-column flex-md-row justify-content-around">
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+                <h2>Applications</h2>
+                <p><strong>Crop Management:</strong> Optimizing planting and fertilization.</p>
+                <p><strong>Soil Management:</strong> Monitoring soil health and moisture.</p>
+                <p><strong>Pest Control:</strong> Identifying and managing pest outbreaks.</p>
+            </div>
+            <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
+                <img src="{% static 'images/agricult2.jpg' %}" class="img-fluid" alt="...">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>About Us</h2>
+                <p>Revosoil is your one-stop solution for soil analysis and agriculture recommendations.
+                     Whether you are a farmer or a gardening enthusiast, we're here to assist you in 
+                     understanding your soil better.</p>
+            </div>
+            <div class="col-lg-6">
+                <h2>Chat with the Soil Doctor</h2>
+                <p>Our virtual assistant is ready to answer your questions on soil science, 
+                    farming, and agriculture. Get expert advice and recommendations right from the comfort of your home.</p>
+                <a href="{% url 'chat_view' %}" class="btn btn-success mt-3">Chat Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Soil Analysis Results</h2>
+            <p class="text-center">Instantly interpret your soil analysis results and receive customized recommendations.</p>
+            <div class="text-center">
+                <a href="{% url 'soil_properties_analysis' %}" class="btn btn-lg btn-success">Get Started</a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+</body>
+</html>
+

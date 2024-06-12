@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block title %}Soil Properties Input Form{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Soil Properties Input Form</h1>
+    <form method="post" class="mt-3">
+        {% csrf_token %}
+        <div class="mb-3 row">
+            <label for="{{ form.ph.id_for_label }}" class="col-sm-2 col-form-label">{{ form.ph.label }}</label>
+            <div class="col-sm-10">
+                {{ form.ph }}
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.organic_carbon.id_for_label }}" class="col-sm-2 col-form-label">{{ form.organic_carbon.label }}</label>
+            <div class="col-sm-10">
+                {{ form.organic_carbon }}
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.total_nitrogen.id_for_label }}" class="col-sm-2 col-form-label">{{ form.total_nitrogen.label }}</label>
+            <div class="col-sm-10">
+                {{ form.total_nitrogen }}
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.available_phosphorus_mg_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.available_phosphorus_mg_kg.label }}</label>
+            <div class="col-sm-10">
+                {{ form.available_phosphorus_mg_kg }}
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <label for="{{ form.exch_acidity_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.exch_acidity_kg.label }}</label>
+            <div class="col-sm-10">
+                {{ form.exch_acidity_kg }}
+            </div>
+        </div>
+	<div class="mb-3 row">
+	    <label for="{{ form.ca_cmol_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.ca_cmol_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.ca_cmol_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.mg_cmol_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.mg_cmol_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.mg_cmol_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.k_cmol_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.k_cmol_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.k_cmol_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.na_cmol_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.na_cmol_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.na_cmol_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.mn_mg_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.mn_mg_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.mn_mg_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.fe_mg_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.fe_mg_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.fe_mg_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.cu_mg_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.cu_mg_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.cu_mg_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.zn_mg_kg.id_for_label }}" class="col-sm-2 col-form-label">{{ form.zn_mg_kg.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.zn_mg_kg }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.sand.id_for_label }}" class="col-sm-2 col-form-label">{{ form.sand.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.sand }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.silt.id_for_label }}" class="col-sm-2 col-form-label">{{ form.silt.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.silt }}
+	    </div>
+	</div>
+	<div class="mb-3 row">
+	    <label for="{{ form.clay.id_for_label }}" class="col-sm-2 col-form-label">{{ form.clay.label }}</label>
+	    <div class="col-sm-10">
+	        {{ form.clay }}
+	    </div>
+	</div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Interprete Soil Analysis</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
