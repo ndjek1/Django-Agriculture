@@ -14,9 +14,14 @@
 </head>
 <body>
 {% block content %}
-    <header class="bg-success text-white text-center py-5">
-        <h1>Precision Agriculture: Revolutionizing Farming</h1>
-        <p class="lead">Your Soil Analysis and Agriculture Companion</p>
+    <header class=" header d-flex flex-column justify-content-center align-items-center  " style="width: 100%;
+    height: 80vh;
+    background-image: url({% static 'images/agricult2.jpg' %});
+    background-size: cover;
+    color: white;
+    background-position: center;" >
+        <h1 style=" font-size: 50px; font-style: bold;">Precision Agriculture: Revolutionizing Farming</h1>
+        <p class="lead text-lg" style="font-size: 30px;">Your Soil Analysis and Agriculture Companion</p>
        
     </header>
 
@@ -35,7 +40,7 @@
 
     <section class="container mt-5 mb-5 bg-teal-700">
         <div class="row flex-column flex-md-row justify-content-around">
-            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;  padding: 30px;">
                 <h2>About Precision Agriculture</h2>
                 <p>Precision agriculture is a modern farming practice that uses technology to optimize field-level
                      management regarding crop farming.</p>
@@ -52,28 +57,30 @@
    
     <section class="container mt-5 mb-5">
         <div class="row flex-column flex-md-row justify-content-around">
-            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+
+            <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
+                <img src="{% static 'images/agricult1.jpg' %}" class="img-fluid" alt="...">
+            </div>
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;  padding: 30px;">
                 <h2>Technologies used</h2>
                 <p><strong>GPS/GNSS:</strong> Precision mapping and navigation.</p>
             <p><strong>Drones:</strong> Aerial imagery for crop monitoring.</p>
             <p><strong>IoT Sensors:</strong> Real-time data on soil and weather conditions.</p>
             <p><strong>Data Analytics:</strong> Transforming data into actionable insights.</p>
             </div>
-            <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
-                <img src="{% static 'images/agricult1.jpg' %}" class="img-fluid" alt="...">
-            </div>
+           
         </div>
     </section>
     <section class="container mt-5 mb-5 p-6">
         <div class="row flex-column flex-md-row justify-content-around">
-            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;">
+            <div class="col-sm-6 col-md-5 col-lg-6 bg-success text-white text-left mb-4" style="font-size: 35px;  padding: 30px;">
                 <h2>Applications</h2>
                 <p><strong>Crop Management:</strong> Optimizing planting and fertilization.</p>
                 <p><strong>Soil Management:</strong> Monitoring soil health and moisture.</p>
                 <p><strong>Pest Control:</strong> Identifying and managing pest outbreaks.</p>
             </div>
             <div class="col-sm-6 col-md-5 offset-md-1 col-lg-6 offset-lg-0 mb-4">
-                <img src="{% static 'images/agricult2.jpg' %}" class="img-fluid" alt="...">
+                <img src="{% static 'images/agricult4.jpg' %}" class="img-fluid" alt="...">
             </div>
         </div>
     </section>
