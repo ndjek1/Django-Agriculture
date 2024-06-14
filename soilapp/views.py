@@ -164,3 +164,5 @@ def chat_view(request):
 
     return render(request, 'chat_page.html', {'form': form, 'chat_messages': chat_messages})
 
+# RYEKO AI ryeko.org
+
