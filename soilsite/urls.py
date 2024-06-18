@@ -28,9 +28,15 @@ urlpatterns = [
 urlpatterns += [
     path('soilapp/', include('soilapp.urls')),
 ]
+urlpatterns += [
+    path('soilIrigation/', include('soilIrigation.urls')),
+]
 
 urlpatterns += [
     path('', RedirectView.as_view(url='soilapp/', permanent=True)),
+]
+urlpatterns += [
+    path('', RedirectView.as_view(url='soilIrigation/', permanent=True)),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

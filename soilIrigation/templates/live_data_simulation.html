@@ -1,0 +1,14 @@
+<!-- soilapp/templates/soilapp/live_data_simulation.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Data Simulation</title>
+</head>
+<body>
+    <h1>Live Data Simulation</h1>
+    <p>Moisture: {{ moisture }}</p>
+    <p>Temperature: {{ temperature }}</p>
+    <p>Irrigation Status: {{ status }}</p>
+    <a href="{% url 'simulate_live_data' %}">Generate new data</a>
+</body>
+</html>

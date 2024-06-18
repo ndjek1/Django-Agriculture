@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'soilapp.apps.SoilappConfig',
     'crispy_forms',
     'crispy_bootstrap5',
+    'soilIrigation',
 ]
 
 MIDDLEWARE = [
